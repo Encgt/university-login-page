@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-small {
+    width: 50px; /* Small size for logos */
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: darkgray;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.home-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-images img {
+    width: 200px;
+    margin: 0 10px;
+}
+
+table.notes-table {
+    width: 60%; /* Reduced width to make the table less large */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+}
+
+table.notes-table th, table.notes-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table.notes-table th {
+    background-color: darkblue; /* Darker blue color for the header */
+    color: white;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+table.notes-table td {
+    background-color: white;
+    color: black;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+table.notes-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue; /* Dark blue color for the title */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2::after {
+    content: '|'; /* Yellow separator */
+    color: #FFCC00; /* Canary yellow color */
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Ensure the left half covers the entire viewport height */
+}
+
+.left-half {
+    flex: 1;
+    background: url('bg-login.46d36c59.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background covers the entire left half */
+}
+
+.right-half {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-university, .logo-encg {
+    width: 25%; /* Adjust the width to make the logos occupy one-fourth each */
+    margin: 0 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    visibility: hidden;
+}
