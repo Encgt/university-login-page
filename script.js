@@ -28,79 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const contentType = this.getAttribute('data-content');
 
             if (contentType === 'notes') {
-                content.innerHTML = `
-                    <h2 style="color: darkblue;">MES NOTES |</h2>
-                    <table class="notes-table">
-                        <tr>
-                            <th>Elément</th>
-                            <th>Moyenne/20</th>
-                            <th>Point de jury</th>
-                            <th>Résultat</th>
-                            <th>Session</th>
-                            <th>Année de validation</th>
-                        </tr>
-                        <tr>
-                            <td>Mathématiques</td>
-                            <td>18</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                        <tr>
-                            <td>Microéconomie</td>
-                            <td>15</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                        <tr>
-                            <td>Comptabilité</td>
-                            <td>17</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                        <tr>
-                            <td>Management</td>
-                            <td>16</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                        <tr>
-                            <td>Anglais</td>
-                            <td>19</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                        <tr>
-                            <td>Français</td>
-                            <td>17</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                        <tr>
-                            <td>MTU</td>
-                            <td>15</td>
-                            <td>-</td>
-                            <td>Validé</td>
-                            <td>Normale</td>
-                            <td>1ère année</td>
-                        </tr>
-                    </table>
-                `;
+                window.location.href = 'notes-page.html'; // Navigate to notes-page.html
             } else {
                 content.innerHTML = '<p>Aucun contenu n\'est disponible ici.</p>';
             }
         });
     });
 });
-
