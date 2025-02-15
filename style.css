@@ -1,4 +1,4 @@
- body {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,6 +20,11 @@ header {
 
 .logo-large {
     width: 80px; /* Increase the size for logos */
+    margin-right: 10px;
+}
+
+.logo-small {
+    width: 50px; /* Size for small logos */
     margin-right: 10px;
 }
 
